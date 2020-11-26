@@ -40,7 +40,7 @@ function draw() {
   background("black")
   fill('white');
   textSize(30);
-  text("Press space to retry", 800,350);
+  text("Press space to retry", 100,100);
   ground.display();
   tree.display();
   boy.display();
