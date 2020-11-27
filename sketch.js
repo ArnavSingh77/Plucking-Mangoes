@@ -12,7 +12,8 @@ function preload() {
 
 function setup() {
 	createCanvas(1600, 700);
-
+	tree = createSprite(1300,680, 20, 20);
+  	tree.addImage(treeImg);
 
 	engine = Engine.create();
 	world = engine.world;
@@ -24,10 +25,8 @@ function setup() {
 	mango4 = new Mango(1390,300,30);
 	mango5 = new Mango(1300,300,30);
 	mango6 = new Mango(1200,300,30);
-  mango7 = new Mango(1500,280,30);
-  tree = createSprite(1300,680, 20, 20);
-  tree.addImage(treeImg);
-  ground = new Ground(0,680,4000,40);
+  	mango7 = new Mango(1500,280,30);
+  	ground = new Ground(0,680,4000,40);
 	boy = new Boy(250,600);
 	chain = new Chain(stone.body,{x:160, y:500});
 
