@@ -7,7 +7,7 @@ const Constraint = Matter.Constraint;
 var tree, treeImg, stone, stoneImg, ground, boy, boyImg;
 
 function preload() {
-	treeImg.loadImage("tree.png");	
+	treeImg = loadImage("tree.png");	
 }
 
 function setup() {
