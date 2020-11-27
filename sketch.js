@@ -45,7 +45,6 @@ function draw() {
   textSize(30);
   text("Press space to retry", 100,100);
   ground.display();
-  tree.display();
   boy.display();
   stone.display();
   mango1.display();
