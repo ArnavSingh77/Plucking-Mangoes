@@ -18,16 +18,16 @@ function setup() {
 
 	stone = new Stone(160,500,20);
 	mango1 = new Mango(1300,300,30);
-	mango2 = new Mango(1400,250,30);
+	mango2 = new Mango(1400,200,30);
 	mango3 = new Mango(1300,200,30);
 	mango4 = new Mango(1390,300,30);
 	mango5 = new Mango(1300,300,30);
 	mango6 = new Mango(1200,300,30);
-  	mango7 = new Mango(1500,280,30);
-	tree = createSprite(1300,600, 2, 2);
-  	tree.addImage(treeImg);
-	tree.scale = 1;
-  	ground = new Ground(0,680,4000,40);
+  mango7 = new Mango(1500,280,30);
+	tree = createSprite(1300,380, 2, 2);
+  tree.addImage(treeImg);
+	tree.scale = 0.5;
+  ground = new Ground(0,680,4000,40);
 	boy = new Boy(250,600);
 	chain = new Chain(stone.body,{x:160, y:500});
 
@@ -44,6 +44,9 @@ function draw() {
   fill('white');
   textSize(30);
   text("Press space to retry", 100,100);
+
+  drawSprites();
+
   ground.display();
   boy.display();
   stone.display();
@@ -64,7 +67,7 @@ function draw() {
   detectCollision(stone, mango6);
   detectCollision(stone, mango7);
 
-  drawSprites();
+ 
  
 }
 
