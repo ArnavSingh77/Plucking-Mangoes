@@ -24,7 +24,7 @@ function setup() {
 	mango5 = new Mango(1300,300,30);
 	mango6 = new Mango(1200,300,30);
   	mango7 = new Mango(1500,280,30);
-	tree = createSprite(1300,680, 2, 2);
+	tree = createSprite(1300,600, 2, 2);
   	tree.addImage(treeImg);
 	tree.scale = 1;
   	ground = new Ground(0,680,4000,40);
