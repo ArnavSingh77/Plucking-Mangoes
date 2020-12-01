@@ -26,7 +26,7 @@ function setup() {
   	mango7 = new Mango(1500,280,30);
 	tree = createSprite(1300,680, 2, 2);
   	tree.addImage(treeImg);
-	tree.scale = 0.2;
+	tree.scale = 1;
   	ground = new Ground(0,680,4000,40);
 	boy = new Boy(250,600);
 	chain = new Chain(stone.body,{x:160, y:500});
